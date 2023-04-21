@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="src.js" defer></script>
+    <script src="https://kit.fontawesome.com/b76f2b0566.js" crossorigin="anonymous"></script>
+    <title>Library</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h2>lilBook</h2>
+            <button type="submit" id="add-btn"><strong>+</strong>Add Book</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <h3>My Books</h3>
+        <div class= "book-container"></div>
+    </main>
+
+    <section class="input-window">
+        <form class="form">
+            <h2>Book's details</h2>
+            <i  id="close-btn" class="fa-solid fa-x" style="color: #146c94;"></i>
+
+            <label for="name">
+                Name of the Book*
+                <input type="text" id="name" placeholder="Name" class="input-control" required>
+            </label>
+
+            <label for="author">
+                Author*
+                <input type="text" id="author" placeholder="Author" class="input-control" required>
+            </label>
+
+
+            <label for="pages">
+                Number of Pages*
+                <input type="number" id="pages" placeholder="Number of Pages" class="input-control" required>
+            </label>
+
+            <label for="box" class="isread">
+                Have you read the book?
+                <input type="checkbox" id="box">
+            </label>
+
+            <button class="submit-btn" type="submit">Submit</button>
+
+ 
+        </form>
+    </section>
+</body>
+</html>
